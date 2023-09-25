@@ -1,7 +1,5 @@
-import numpy as np
-
 def game_core_v3(number: int = 1) -> int:
-    """
+    """Угадывает число при помощи бинарного поиска
     Args:
         number (int, optional): Загаданное число. Defaults to 1.
 
@@ -9,23 +7,30 @@ def game_core_v3(number: int = 1) -> int:
         int: Число попыток
     """
     count = 0
-    upper_limit = 100
-    lower_limit = 0
+    upper_limit = 100  # Верхняя граница ряда чисел, среди которых угадываем
+    lower_limit = 0  # Нижняя граница ряда чисел
+
+    # Запускаем цикл при условии, что границы не поменяются местами
     while upper_limit >= lower_limit:
-        count += 1
-        predict = (upper_limit+lower_limit)//2
 
+        count += 1  # Считает число попыток
+        # Предполагаем, что загаданное число находится посередине ряда
+        predict = (upper_limit + lower_limit) // 2
+
+        # Если предсказанное число равно загаданному,
         if predict == number:
-            return count
+            return count  # возвращаем количество попыток
 
+        # Если загаданное число больше предсказанного,
         elif number > predict:
+            # нижняя граница становится загаданным числом + 1
             lower_limit = predict+1
 
+        # Если загаданное число меньше предсказанного,
         else:
-            number < predict
+            # верхняя граница становится загаданным числом - 1
             upper_limit = predict-1
-    return count
 
-
-print(game_core_v3())
+    # Если границы сошлись,
+    return count  # возвращаем количество попыток
 
