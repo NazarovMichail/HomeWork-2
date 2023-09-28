@@ -1,5 +1,5 @@
 # Проект 0. Угадай число
-<img alt="logo" src="img/py.jpg">
+<img alt="logo" src="img/pylogo.jpg">
 
 ## Оглавление
 [1. Описание проекта](.README.md#Описание-проекта)
