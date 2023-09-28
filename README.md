@@ -10,7 +10,7 @@
 
 [4. Этапы работы над проектом](https://github.com/NazarovMichail/HomeWork-2#Этапы-работы-над-проектом)
 
-[5. Результат](https://github.com/NazarovMichail/HomeWork-2#Результат)
+[5. Результат](https://github.com/NazarovMichail/HomeWork-2#Результаты)
 
 [6. Выводы](https://github.com/NazarovMichail/HomeWork-2#Выводы)
 
